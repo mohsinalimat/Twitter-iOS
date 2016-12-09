@@ -12,7 +12,10 @@
 		1812DC3A1DFA04420066D1A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1812DC381DFA04420066D1A8 /* Main.storyboard */; };
 		1812DC3C1DFA04420066D1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1812DC3B1DFA04420066D1A8 /* Assets.xcassets */; };
 		1812DC3F1DFA04420066D1A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1812DC3D1DFA04420066D1A8 /* LaunchScreen.storyboard */; };
-		181DFF811DFA10F700275BDD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFF801DFA10F700275BDD /* UIButton.swift */; };
+		181666BB1DFA28A200F81E71 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181666BA1DFA28A200F81E71 /* HomeTableViewController.swift */; };
+		181666C11DFA2B1A00F81E71 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181666BF1DFA2B1A00F81E71 /* TweetTableViewCell.swift */; };
+		181666C21DFA2B1A00F81E71 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181666C01DFA2B1A00F81E71 /* TweetTableViewCell.xib */; };
+		181DFF811DFA10F700275BDD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFF801DFA10F700275BDD /* UIView.swift */; };
 		181DFF841DFA120C00275BDD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFF831DFA120C00275BDD /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +27,10 @@
 		1812DC3B1DFA04420066D1A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1812DC3E1DFA04420066D1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1812DC401DFA04420066D1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		181DFF801DFA10F700275BDD /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		181666BA1DFA28A200F81E71 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		181666BF1DFA2B1A00F81E71 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		181666C01DFA2B1A00F81E71 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		181DFF801DFA10F700275BDD /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		181DFF831DFA120C00275BDD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,20 +65,39 @@
 			isa = PBXGroup;
 			children = (
 				1812DC341DFA04410066D1A8 /* AppDelegate.swift */,
-				1812DC361DFA04410066D1A8 /* StartViewController.swift */,
+				181666BC1DFA291400F81E71 /* Controllers */,
 				1812DC381DFA04420066D1A8 /* Main.storyboard */,
 				1812DC3B1DFA04420066D1A8 /* Assets.xcassets */,
 				1812DC3D1DFA04420066D1A8 /* LaunchScreen.storyboard */,
 				1812DC401DFA04420066D1A8 /* Info.plist */,
 				181DFF821DFA110F00275BDD /* Extensions */,
+				181666C31DFA2B2200F81E71 /* TweetTableViewCell */,
 			);
 			path = Twitter;
+			sourceTree = "<group>";
+		};
+		181666BC1DFA291400F81E71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1812DC361DFA04410066D1A8 /* StartViewController.swift */,
+				181666BA1DFA28A200F81E71 /* HomeTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		181666C31DFA2B2200F81E71 /* TweetTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				181666C01DFA2B1A00F81E71 /* TweetTableViewCell.xib */,
+				181666BF1DFA2B1A00F81E71 /* TweetTableViewCell.swift */,
+			);
+			name = TweetTableViewCell;
 			sourceTree = "<group>";
 		};
 		181DFF821DFA110F00275BDD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				181DFF801DFA10F700275BDD /* UIButton.swift */,
+				181DFF801DFA10F700275BDD /* UIView.swift */,
 				181DFF831DFA120C00275BDD /* UIColor.swift */,
 			);
 			name = Extensions;
@@ -141,6 +166,7 @@
 				1812DC3F1DFA04420066D1A8 /* LaunchScreen.storyboard in Resources */,
 				1812DC3C1DFA04420066D1A8 /* Assets.xcassets in Resources */,
 				1812DC3A1DFA04420066D1A8 /* Main.storyboard in Resources */,
+				181666C21DFA2B1A00F81E71 /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,8 +179,10 @@
 			files = (
 				1812DC371DFA04410066D1A8 /* StartViewController.swift in Sources */,
 				181DFF841DFA120C00275BDD /* UIColor.swift in Sources */,
-				181DFF811DFA10F700275BDD /* UIButton.swift in Sources */,
+				181DFF811DFA10F700275BDD /* UIView.swift in Sources */,
 				1812DC351DFA04410066D1A8 /* AppDelegate.swift in Sources */,
+				181666BB1DFA28A200F81E71 /* HomeTableViewController.swift in Sources */,
+				181666C11DFA2B1A00F81E71 /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

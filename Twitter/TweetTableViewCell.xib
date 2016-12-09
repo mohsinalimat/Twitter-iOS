@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TweetCell" rowHeight="215" id="KGk-i7-Jjw" customClass="TweetTableViewCell" customModule="Twitter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="215"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="214.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="jTF-p0-QAx">
+                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="cmT-mg-1PZ"/>
+                            <constraint firstAttribute="height" constant="64" id="dPb-eo-fvz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-eR-HWT">
+                        <rect key="frame" x="80" y="8" width="48" height="97"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                        <state key="normal" title="Name">
+                            <color key="titleColor" red="0.11372549019607843" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfK-eV-N0J">
+                        <rect key="frame" x="132" y="48.5" width="73.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P3-T4-sbS">
+                        <rect key="frame" x="231" y="48.5" width="20" height="16.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="・" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-DU-XeO">
+                        <rect key="frame" x="209.5" y="46.5" width="17.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRE-zL-p1s">
+                        <rect key="frame" x="80" y="105" width="247" height="65.5"/>
+                        <string key="text">Succesfully deployed a dummy #rustlang website to @clever_cloud. Their native support for Rust made it simpler than with Heroku.</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="A0I-pH-JMC">
+                        <rect key="frame" x="80" y="178.5" width="213" height="20"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ugq-cv-Cr1">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYK-xo-Uxd">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="UiW-8n-Uwp"/>
+                                            <constraint firstAttribute="width" constant="20" id="y8J-JZ-LIP"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="ic_answer"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7f-h8-aRw">
+                                        <rect key="frame" x="24" y="0.0" width="8" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5Ts-ew-1ai">
+                                <rect key="frame" x="64.5" y="0.0" width="32" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX2-yu-KoI">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Dtb-cW-APH"/>
+                                            <constraint firstAttribute="height" constant="20" id="OeU-x8-u4K"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="ic_retweet"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85n-Ey-3lB">
+                                        <rect key="frame" x="24" y="0.0" width="8" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="cDd-Xc-sp9">
+                                <rect key="frame" x="128.5" y="0.0" width="32" height="20"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-6U-n7J">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="LK3-IK-Avf"/>
+                                            <constraint firstAttribute="height" constant="20" id="O4l-Bg-FhN"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="ic_heart"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2m-yd-KKo">
+                                        <rect key="frame" x="24" y="0.0" width="8" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVd-Sw-CZj">
+                                <rect key="frame" x="193" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Aqq-Jx-Gcx"/>
+                                    <constraint firstAttribute="height" constant="20" id="aCy-yV-MxJ"/>
+                                </constraints>
+                                <color key="tintColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_message"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cR9-fl-QJc"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FOE-DU-XeO" firstAttribute="leading" secondItem="hfK-eV-N0J" secondAttribute="trailing" constant="4" id="3bX-Y2-3rE"/>
+                    <constraint firstItem="X2g-eR-HWT" firstAttribute="leading" secondItem="jTF-p0-QAx" secondAttribute="trailing" constant="8" id="5XO-RE-H6W"/>
+                    <constraint firstItem="hfK-eV-N0J" firstAttribute="leading" secondItem="X2g-eR-HWT" secondAttribute="trailing" constant="4" id="D8L-s6-XO4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="A0I-pH-JMC" secondAttribute="bottom" constant="8" id="GEE-46-TB3"/>
+                    <constraint firstItem="A0I-pH-JMC" firstAttribute="leading" secondItem="zRE-zL-p1s" secondAttribute="leading" id="Ht6-h3-Fy6"/>
+                    <constraint firstItem="FOE-DU-XeO" firstAttribute="centerY" secondItem="hfK-eV-N0J" secondAttribute="centerY" id="J2X-ZD-t8S"/>
+                    <constraint firstItem="jTF-p0-QAx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="S1L-fM-pod"/>
+                    <constraint firstItem="zRE-zL-p1s" firstAttribute="leading" secondItem="X2g-eR-HWT" secondAttribute="leading" id="TbT-57-eCR"/>
+                    <constraint firstItem="7P3-T4-sbS" firstAttribute="leading" secondItem="FOE-DU-XeO" secondAttribute="trailing" constant="4" id="UAE-Il-cKF"/>
+                    <constraint firstItem="jTF-p0-QAx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Y2k-eJ-Xme"/>
+                    <constraint firstItem="A0I-pH-JMC" firstAttribute="top" secondItem="zRE-zL-p1s" secondAttribute="bottom" constant="8" id="ZPB-Vt-9Fv"/>
+                    <constraint firstItem="7P3-T4-sbS" firstAttribute="centerY" secondItem="hfK-eV-N0J" secondAttribute="centerY" id="bfD-Aw-iy2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zRE-zL-p1s" secondAttribute="trailing" id="bfa-83-5tr"/>
+                    <constraint firstItem="hfK-eV-N0J" firstAttribute="centerY" secondItem="X2g-eR-HWT" secondAttribute="centerY" id="fVv-sK-lAa"/>
+                    <constraint firstItem="X2g-eR-HWT" firstAttribute="top" secondItem="jTF-p0-QAx" secondAttribute="top" id="jih-kv-VBg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="A0I-pH-JMC" secondAttribute="trailing" constant="34" id="k9G-Yg-SVs"/>
+                    <constraint firstItem="zRE-zL-p1s" firstAttribute="top" secondItem="X2g-eR-HWT" secondAttribute="bottom" id="uiw-P4-zTA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="32.5" y="149.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_answer" width="25" height="25"/>
+        <image name="ic_heart" width="25" height="25"/>
+        <image name="ic_message" width="25" height="25"/>
+        <image name="ic_retweet" width="25" height="25"/>
+        <image name="placeholder_image" width="64" height="64"/>
+    </resources>
+</document>

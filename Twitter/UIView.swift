@@ -1,5 +1,5 @@
 //
-//  UIButton.swift
+//  UIView.swift
 //  Twitter
 //
 //  Created by Guilherme Souza on 08/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIButton {
+extension UIView {
 
     @IBInspectable var cornerRadius: CGFloat {
         get {
