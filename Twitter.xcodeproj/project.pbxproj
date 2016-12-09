@@ -17,6 +17,7 @@
 		181666C21DFA2B1A00F81E71 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181666C01DFA2B1A00F81E71 /* TweetTableViewCell.xib */; };
 		181DFF811DFA10F700275BDD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFF801DFA10F700275BDD /* UIView.swift */; };
 		181DFF841DFA120C00275BDD /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181DFF831DFA120C00275BDD /* UIColor.swift */; };
+		18EC57081DFB232500ED8F7C /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC57071DFB232500ED8F7C /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		181666C01DFA2B1A00F81E71 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		181DFF801DFA10F700275BDD /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		181DFF831DFA120C00275BDD /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		18EC57071DFB232500ED8F7C /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		1812DC331DFA04410066D1A8 /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				18EC57061DFB231B00ED8F7C /* Model */,
 				1812DC341DFA04410066D1A8 /* AppDelegate.swift */,
 				181666BC1DFA291400F81E71 /* Controllers */,
 				1812DC381DFA04420066D1A8 /* Main.storyboard */,
@@ -101,6 +104,14 @@
 				181DFF831DFA120C00275BDD /* UIColor.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		18EC57061DFB231B00ED8F7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18EC57071DFB232500ED8F7C /* Tweet.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				1812DC371DFA04410066D1A8 /* StartViewController.swift in Sources */,
 				181DFF841DFA120C00275BDD /* UIColor.swift in Sources */,
 				181DFF811DFA10F700275BDD /* UIView.swift in Sources */,
+				18EC57081DFB232500ED8F7C /* Tweet.swift in Sources */,
 				1812DC351DFA04410066D1A8 /* AppDelegate.swift in Sources */,
 				181666BB1DFA28A200F81E71 /* HomeTableViewController.swift in Sources */,
 				181666C11DFA2B1A00F81E71 /* TweetTableViewCell.swift in Sources */,
